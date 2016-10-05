@@ -19,6 +19,8 @@ tags:
 
 ## Descrption
 
+---
+
 输出 hello, world
 
 
@@ -26,21 +28,20 @@ tags:
 
 ## Input
 
+---
+
 无
 
 ## Output
-```
-hello, world
-```
-## Hint
-http://zh.wikipedia.org/wiki/Hello_World
 
-http://en.wikipedia.org/wiki/%22Hello,_world!%22_program
+---
 
-
+> hello, world
 
 ## Code
+
 ---
+
 ~~~ cpp
 #include <stdio.h>
 
@@ -58,6 +59,37 @@ int main() {
 
 ---
 
+Your task is to write a program to output the following image:
+
+> *..
+> **.
+> ***
+
+
+## Input
+
+---
+
+No input.
+
+## Output
+
+---
+
+As mentioned above.
+
+## Sample Output
+
+---
+
+
+> *..
+> **.
+> ***
+
+## Code
+
+---
 
 ~~~ cpp
 #include <stdio.h>
@@ -72,6 +104,42 @@ int main() {
 
 # A-B
 
+---
+
+## Description
+
+---
+
+输入两个整数A和B，输出这两个整数的差A-B。
+
+## Input
+
+---
+
+输入只有一行，该行只有两个整数，分别对应A和B，它们之间用一个空格分开。其中，A、B的取值范围为：  -1000 <= A <=1000 ,  -1000 <= B <= 1000。
+
+## Output
+
+---
+
+输出独占一行，该行只有一个整数，它正好是A-B的值（注意，其后面需要加一个换行符）。
+
+## Sample Input
+
+---
+
+> 2 1
+
+## Sample Output
+
+---
+
+> 1
+
+## Code
+
+---
+
 ~~~ cpp
 #include <stdio.h>
 
@@ -83,10 +151,49 @@ int main() {
     
     return 0;
 }
- 1
 ~~~
 
 # Polynomial I
+
+---
+
+## Description
+
+---
+
+Given two pair of integers (a1,b1) and (a2,b2),can you calculate the expanded form of (a1\*x+b1)\*(a2\*x+b2)?  
+(note that we use "x^2" to express x\*x and omit "*")
+ 
+## Input
+
+---
+
+Two line, each line contains a pair of integers ai and bi.(2<=ai,bi<=20)
+
+## Output
+
+---
+
+One line,the expanded form of (a1\*x+b1)\*(a2\*x+b2).
+
+## Sample Input
+
+---
+
+Copy sample input to clipboard
+
+> 4 2
+> 5 7
+
+## Sample Output
+
+---
+
+> 20x^2+38x+14
+
+## Code
+
+---
 
 ~~~ cpp
 #include <stdio.h>
