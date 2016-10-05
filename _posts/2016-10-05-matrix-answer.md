@@ -1,9 +1,9 @@
 ---
 layout: answer-post
-title: "作业 week3-week5"
-subtitle: "matrix answer"
+title: "作业 Week 3 - Week 5"
+subtitle: "assignments from Week 3 to Week 5"
 create-date: 2016-10-05
-update-date: 2016-10-05
+update-date: 2016-10-06
 header-img: ""
 author: "TA"
 tags:
@@ -39,8 +39,6 @@ tags:
 > hello, world
 
 ## Code
-
----
 
 ~~~ cpp
 #include <stdio.h>
@@ -91,8 +89,6 @@ As mentioned above.
 
 ## Code
 
----
-
 ~~~ cpp
 #include <stdio.h>
 
@@ -102,6 +98,7 @@ int main() {
     printf("***\n");
     return 0;
 }
+
 ~~~
 
 # A-B
@@ -140,8 +137,6 @@ int main() {
 
 ## Code
 
----
-
 ~~~ cpp
 #include <stdio.h>
 
@@ -153,6 +148,7 @@ int main() {
     
     return 0;
 }
+
 ~~~
 
 # Polynomial I
@@ -184,7 +180,7 @@ One line,the expanded form of (a1\*x+b1)\*(a2\*x+b2).
 
 Copy sample input to clipboard
 
-> 4 2
+> 4 2  
 > 5 7
 
 ## Sample Output
@@ -195,17 +191,16 @@ Copy sample input to clipboard
 
 ## Code
 
----
-
 ~~~ cpp
 #include <stdio.h>
 
 int main() {
-    int a1, b1, a2, b2;
+    int a1 = 0, b1 = 0, a2 = 0, b2 = 0;
     
     scanf("%d%d%d%d", &a1, &b1, &a2, &b2);
     printf("%dx^2+%dx+%d\n", a1 * a2, a1 * b2 + a2 * b1, b1 * b2);
     
     return 0;
 }
+
 ~~~
