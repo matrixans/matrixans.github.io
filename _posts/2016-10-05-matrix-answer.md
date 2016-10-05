@@ -61,10 +61,11 @@ int main() {
 
 Your task is to write a program to output the following image:
 
-> \*\.\.
-> \*\*\.
-> \*\*\*
-
+<p>
+*..<br />
+**.<br />
+***
+</p>
 
 ## Input
 
