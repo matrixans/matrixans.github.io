@@ -118,7 +118,7 @@ layout: default
            "language-trueBash": 'language-bash',
            "language-git": 'language-bash'
          };
-         hljs.configure({"lineNode": true});
+         hljs.configure({"noLineNum": false});
          $('pre code').each(function(i, e) {
           var result = this.className.match(/language-[\w]{1,}/);
           if (!result) return;
@@ -135,7 +135,7 @@ layout: default
           hljs.highlightBlock(code[0]);
         });
       });
-      function generateCatalog (selector) {
+      function generateCatalog(selector) {
           var P = $('div.post-container'),a,n,t,l,i,c;
           a = P.find('h1');
           a.each(function () {

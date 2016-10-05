@@ -44,7 +44,8 @@
     classPrefix: 'hljs-',
     tabReplace: null,
     useBR: false,
-    languages: undefined
+    languages: undefined,
+    noLineNum: false
   };
 
   // Object map that is used to escape some common HTML characters.
@@ -633,11 +634,11 @@
       resultNode.innerHTML = result.value;
       result.value = mergeStreams(originalStream, nodeStream(resultNode), text);
     }
-    if (true) {
+    if (!options.noLineNum) {
       var resultPre = document.createElement('pre');
       resultPre.innerHTML = result.value;
       var linesPre = document.createElement('pre');
-      var lines = escape(text.trimRight()).replace(/^.*?(\n|$)/gm, '<span class="line">$&</span>');
+      var lines = escape(text.slice(0, -1)).replace(/^.*?(\n|$)/gm, '<span class="line">$&</span>');
       linesPre.innerHTML = lines;
       result.value = mergeStreams(nodeStream(linesPre), nodeStream(resultPre), text);
     }
