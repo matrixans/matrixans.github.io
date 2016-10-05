@@ -25,7 +25,6 @@ int main() {
 
 ~~~
 
-
 # Triangle I
 
 ~~~ cpp
@@ -38,4 +37,34 @@ int main() {
     return 0;
 }
 
+~~~
+
+# A-B
+
+~~~ cpp
+#include <stdio.h>
+
+int main() {
+    int num1 = 0, num2 = 0;
+    
+    scanf("%d%d", &num1, &num2);
+    printf("%d\n", num1 - num2);
+    
+    return 0;
+}
+~~~
+
+# Polynomial I
+
+~~~ cpp
+#include <stdio.h>
+
+int main() {
+    int a1, b1, a2, b2;
+    
+    scanf("%d%d%d%d", &a1, &b1, &a2, &b2);
+    printf("%dx^2+%dx+%d\n", a1 * a2, a1 * b2 + a2 * b1, b1 * b2);
+    
+    return 0;
+}
 ~~~
