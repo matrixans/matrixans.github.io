@@ -171,26 +171,24 @@ int main() {
 
 ---
 
-Given two pair of integers $$(a1, b1)$$ and $$(a2, b2)$$, can you calculate the expanded form of $$(a1\*x+b1)\*(a2\*x+b2)$$?  
-(note that we use ``x^2`` to express $$x\*x$$ and omit ``*``)
+Given two pair of integers $$(a1, b1)$$ and $$(a2, b2)$$, can you calculate the expanded form of $$(a_1 x + b_1)(a_2 x + b_2)$$?  
+(note that we use ``x^2`` to express ``x*x`` and omit ``*``)
 
 ## Input
 
 ---
 
-Two line, each line contains a pair of integers ai and bi. $$(2 <= ai, bi <= 20)$$
+Two line, each line contains a pair of integers ai and bi. $$(2 <= a_i , b_i <= 20)$$
 
 ## Output
 
 ---
 
-One line,the expanded form of $$(a1\*x+b1)\*(a2\*x+b2)$$.
+One line, the expanded form of $$(a_1 x + b_1)(a_2 x+b_2)$$.
 
 ## Sample Input
 
 ---
-
-Copy sample input to clipboard
 
 ~~~
 4 2  
