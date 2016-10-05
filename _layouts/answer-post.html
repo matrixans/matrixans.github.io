@@ -100,7 +100,7 @@ layout: default
       placement: 'right',
       icon: '#'
     };
-    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    anchors.add('h1:not(.intro-header):not(.subheading)');
   })
 </script>
 {% endif %}
