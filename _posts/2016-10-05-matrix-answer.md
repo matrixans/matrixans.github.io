@@ -47,6 +47,7 @@ int main() {
     printf("hello, world\n");
     return 0;
 }
+
 ~~~
 
 # Triangle I
@@ -59,11 +60,9 @@ int main() {
 
 Your task is to write a program to output the following image:
 
-<p>
-*..<br />
-**.<br />
-***
-</p>
+> *..  
+> **.  
+> ***
 
 ## Input
 
@@ -81,11 +80,9 @@ As mentioned above.
 
 ---
 
-<p>
-*..<br />
-**.<br />
-***
-</p>
+> *..  
+> **.  
+> ***
 
 ## Code
 
