@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "作业参考答案"
+title: "作业 week3-week5"
 subtitle: "matrix answer"
 create-date: 2016-10-05
 update-date: 2016-10-05
@@ -13,31 +13,29 @@ tags:
 > The article was initially posted on **{{ page.create-date | date: "%Y-%m-%d" }}**.
 
 
-# 第一题
+# hello, world
 
-printf
+~~~ cpp
+#include <stdio.h>
 
-~~~cpp
+int main() {
+    printf("hello, world\n");
+    return 0;
+}
 
-// C code
-int num = 10;
-
-printf("十六进制小写：%x"
-     "\n十六进制大写：%X"
-     "\n八进制：%o"
-     "\n十进制：%d"
-     "\n", num, num, num, num);
 ~~~
 
 
-# 第二题
+# Triangle I
 
 ~~~ cpp
-int num = 10;
+#include <stdio.h>
 
-printf("十六进制小写：%x"
-     "\n十六进制大写：%X"
-     "\n八进制：%o"
-     "\n十进制：%d"
-     "\n", num, num, num, num);
+int main() {
+    printf("*..\n");
+    printf("**.\n");
+    printf("***.\n");
+    return 0;
+}
+
 ~~~
