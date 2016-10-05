@@ -28,6 +28,7 @@ printf("十六进制小写：%x"
      "\n", num, num, num, num);
 ~~~
 
+
 # 第二题
 
 ~~~ cpp
