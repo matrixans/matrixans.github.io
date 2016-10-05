@@ -1,0 +1,68 @@
+@import "variables.less";
+@import "mixins.less";
+
+// Large Screen
+@media screen and (min-width: 1200px) {
+  .post-container, .sidebar-container {
+    padding-right: 5%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .post-container {
+     padding-right: 5%;
+  }
+}
+
+// Container of Sidebar, also Friends
+.sidebar-container {
+  color: @gray-l;
+  font-size: 14px;
+  a {
+    color: @gray;
+    text-decoration: none;
+  }
+  h5 {
+    padding-bottom: 1em;
+  }
+  .tags {
+    a {
+      border-color: @gray-l;
+      color: @gray-l;
+      &:hover,
+      &:active {
+        color: @brand-primary;
+        border-color: @brand-primary;
+      }
+    }
+  }
+  .short-about {
+    img {
+      width: 80%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+
+      border-radius: 5px;
+    }
+    p {
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+    .list-inline {
+      margin-left: 0;
+
+      text-align: center;
+
+      a {
+        text-decoration: none;
+      }
+    }
+    @media screen and (min-width:992px) {
+      hr.hr-below-something {
+        display: none;
+      }
+    }
+
+  }
+}
