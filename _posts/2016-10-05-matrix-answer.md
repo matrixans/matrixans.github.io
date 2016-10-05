@@ -36,9 +36,13 @@ tags:
 
 ---
 
-> hello, world
+~~~
+hello, world
+~~~
 
 ## Code
+
+---
 
 ~~~ cpp
 #include <stdio.h>
@@ -60,9 +64,11 @@ int main() {
 
 Your task is to write a program to output the following image:
 
-> \*..  
-> \*\*.  
-> \*\*\*
+~~~
+*..  
+**.  
+***
+~~~
 
 ## Input
 
@@ -74,17 +80,15 @@ No input.
 
 ---
 
-As mentioned above.
-
-## Sample Output
-
----
-
-> \*..  
-> \*\*.  
-> \*\*\*
+~~~
+*..  
+**.  
+***
+~~~
 
 ## Code
+
+---
 
 ~~~ cpp
 #include <stdio.h>
@@ -124,15 +128,21 @@ int main() {
 
 ---
 
-> 2 1
+~~~
+2 1
+~~~
 
 ## Sample Output
 
 ---
 
-> 1
+~~~
+1
+~~~
 
 ## Code
+
+---
 
 ~~~ cpp
 #include <stdio.h>
@@ -177,16 +187,22 @@ One line,the expanded form of (a1\*x+b1)\*(a2\*x+b2).
 
 Copy sample input to clipboard
 
-> 4 2  
-> 5 7
+~~~
+4 2  
+5 7
+~~~
 
 ## Sample Output
 
 ---
 
-> 20x^2+38x+14
+~~~
+20x^2+38x+14
+~~~
 
 ## Code
+
+---
 
 ~~~ cpp
 #include <stdio.h>
