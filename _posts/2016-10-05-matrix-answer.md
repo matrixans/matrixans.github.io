@@ -61,9 +61,9 @@ int main() {
 
 Your task is to write a program to output the following image:
 
-> *..
-> **.
-> ***
+> \*\.\.
+> \*\*\.
+> \*\*\*
 
 
 ## Input
@@ -163,7 +163,7 @@ int main() {
 
 Given two pair of integers (a1,b1) and (a2,b2),can you calculate the expanded form of (a1\*x+b1)\*(a2\*x+b2)?  
 (note that we use "x^2" to express x\*x and omit "*")
- 
+
 ## Input
 
 ---
