@@ -82,7 +82,7 @@ As mentioned above.
 
 > *..  
 > **.  
-> ***
+> \*\*\*
 
 ## Code
 
