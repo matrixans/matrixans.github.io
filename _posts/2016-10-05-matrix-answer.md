@@ -16,10 +16,7 @@ tags:
 # hello, world
 
 ## Description
-
-hahaha
-
-
+---
 ~~~ cpp
 #include <stdio.h>
 
