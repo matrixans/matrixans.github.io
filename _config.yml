@@ -44,7 +44,7 @@ ga_domain:
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: ""
-sidebar-avatar: "https://matrixans.github.io/favicon.ico"      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: "https://matrixans.github.io/img/avatar.png"      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
@@ -52,10 +52,12 @@ featured-condition-size: -1              # A tag will be featured if the size of
 
 # Friends
 friends: [
-    # {
-    #     title: "Hux Blog",
-    #     href: "http://huangxuan.me"
-    # },{
+    {
+        title: "Mensu",
+        href: "https://mensu.github.io"
+    }
+    
+    # ,{
     #     title: "Foo",
     #     href: "#"
     # },{
