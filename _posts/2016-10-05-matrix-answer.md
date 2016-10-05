@@ -60,9 +60,9 @@ int main() {
 
 Your task is to write a program to output the following image:
 
-> *..  
-> **.  
-> ***
+> \*..  
+> \*\*.  
+> \*\*\*
 
 ## Input
 
@@ -80,8 +80,8 @@ As mentioned above.
 
 ---
 
-> *..  
-> **.  
+> \*..  
+> \*\*.  
 > \*\*\*
 
 ## Code
