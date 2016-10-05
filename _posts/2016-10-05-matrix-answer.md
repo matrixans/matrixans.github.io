@@ -178,7 +178,7 @@ Given two pair of integers $$(a1, b1)$$ and $$(a2, b2)$$, can you calculate the 
 
 ---
 
-Two line, each line contains a pair of integers ai and bi. $$(2 <= a_i , b_i <= 20)$$
+Two line, each line contains a pair of integers $$a_i$$ and $$b_i$$. $$(2 <= a_i , b_i <= 20)$$
 
 ## Output
 
