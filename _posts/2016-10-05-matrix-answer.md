@@ -16,6 +16,7 @@ tags:
 # 第一题
 
 printf
+
 ~~~cpp
 
 // C code
