@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: answer-post
 title: "作业 week3-week5"
 subtitle: "matrix answer"
 create-date: 2016-10-05
@@ -15,6 +15,11 @@ tags:
 
 # hello, world
 
+## Description
+
+hahaha
+
+
 ~~~ cpp
 #include <stdio.h>
 
@@ -22,7 +27,6 @@ int main() {
     printf("hello, world\n");
     return 0;
 }
-
 ~~~
 
 # Triangle I
@@ -36,7 +40,6 @@ int main() {
     printf("***.\n");
     return 0;
 }
-
 ~~~
 
 # A-B
@@ -52,6 +55,7 @@ int main() {
     
     return 0;
 }
+ 1
 ~~~
 
 # Polynomial I
