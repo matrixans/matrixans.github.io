@@ -361,6 +361,8 @@ int main() {
 运用printf格式字符串中*的用法，配合循环可以写的简洁一些
 
 ~~~
+#include <stdio.h>
+
 int main() {
     char ch = 0;
     scanf("%c", &ch);
@@ -526,7 +528,9 @@ int main() {
 
 从解决问题的角度来看，题目要求原样输出，于是可以将输入作为字符串输入，然后直接输出，省了很多事。
 
-~~~
+~~~cpp
+#include <stdio.h>
+
 int main() {
     const int BUF_SIZE = 1000;
     char s[BUF_SIZE+1];
