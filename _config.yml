@@ -1,6 +1,6 @@
 # Site settings
 title: Answer
-SEOTitle: matrix answer
+SEOTitle: possible answers for assignments on Matrix
 email: yxshw55@qq.com
 description: answer
 keyword: ""
@@ -11,7 +11,7 @@ manager: Mensu
 
 # Build settings
 gems: [jekyll-paginate]
-paginate: 2
+paginate: 4
 exclude: ["less","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
