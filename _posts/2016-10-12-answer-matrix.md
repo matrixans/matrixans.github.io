@@ -28,7 +28,7 @@ The input is valid if the sum of any two edges is greater than the third edge.
 ---
 
 Three numbers a, b, c(seperated by one blank) which represent the edges of a triangle.
- 
+
 ## Output
 
 ---
