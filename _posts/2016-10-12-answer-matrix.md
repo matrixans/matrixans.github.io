@@ -1,9 +1,9 @@
 ---
 layout: answer-post
-title: "作业 Week 3 - Week 5"
-subtitle: "assignments from Week 3 to Week 5"
-create-date: 2016-10-05
-update-date: 2016-10-06
+title: "作业 Week 7"
+subtitle: "assignments of Week 7"
+create-date: 2016-10-12
+update-date: 2016-10-12
 header-img: ""
 author: "TA"
 tags:
