@@ -3,15 +3,24 @@
 Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
 
 */
-div.highlight-rouge pre {
-  border-radius: 3px;
+.highlighter-rouge {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.highlighter-rouge pre {
+  border-style: solid;
+  border-color: #f7f7f7;
+  border-width: 10px 5px 10px 10px;
+  padding: 0;
+  margin-bottom: 0;
 }
 .hljs {
   display: inline-block;
-  min-width: 98%;
+  min-width: 100%;
+  box-sizing: border-box;
+  border-radius: 3px;
   padding: 0.5em;
   background: #23241f;
-  border-radius: 3px;
 }
 .hljs {
   counter-reset: lines;
