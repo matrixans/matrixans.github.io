@@ -3,11 +3,11 @@
 Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
 
 */
-.highlighter-rouge {
+div.highlighter-rouge {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-.highlighter-rouge pre {
+div.highlighter-rouge pre {
   border-style: solid;
   border-color: #f7f7f7;
   border-width: 10px 5px 10px 10px;
