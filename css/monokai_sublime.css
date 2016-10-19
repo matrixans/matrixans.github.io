@@ -3,12 +3,15 @@
 Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
 
 */
-
+div.highlight-rouge pre {
+  border-radius: 3px;
+}
 .hljs {
   display: inline-block;
-  min-width: 100%;
+  min-width: 98%;
   padding: 0.5em;
   background: #23241f;
+  border-radius: 3px;
 }
 .hljs {
   counter-reset: lines;
@@ -29,6 +32,13 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
   padding-right: 0.5em; margin-right: 0.5em;
   color: #BBB; border-right: solid 1px;
 }
+.hljs-comment ~ .line {
+  color: #75715e;
+}
+.hljs-comment ~ .line::before {
+  font-style: normal;
+}
+
 .hljs,
 .hljs-tag,
 .hljs-subst {
@@ -104,4 +114,3 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .hljs-deletion {
   color: #75715e;
 }
-
