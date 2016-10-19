@@ -100,7 +100,7 @@ layout: default
       placement: 'right',
       icon: '#'
     };
-    anchors.add('.post-container h1');
+    anchors.add('.post-container h1, .post-container h2, .post-container h3, .post-container h4, .post-container h5, .post-container h6');
   })
 </script>
 {% endif %}
@@ -112,17 +112,23 @@ layout: default
 <!-- highlight.js -->
 <script type="text/javascript">
   $(document).ready(function() {
-      var lanMap = {
-        "language-kramdown": 'language-markdown',
-        "language-git": 'language-bash'
-      };
-    $('div.highlighter-rouge').each(function(i, e) {
-      var code = $(this).find('code');
-      var result = $(this).attr('class').match(/language-[\w]{1,}/);
+    var lanMap = {
+      "language-kramdown": 'language-markdown',
+      "language-git": 'language-bash',
+      'language-liquid': 'language-django'
+    };
+    $('.post-container > div.highlighter-rouge, .post-container > pre code').each(function(i, e) {
+      var code = $(this);
+      if (code.prop('tagName').toLowerCase() != 'code') code = code.find('code');
+      var result = $(this).prop('className').match(/language-[\w]{1,}/);
       // remove '\n'
-      code.text(code.text().slice(0, -1));
+      var codeText = code.text();
+      if (codeText.endsWith('\n')) {
+        code.text(codeText.slice(0, -1));
+      }
       if (result) {
-        var classToAdd = lanMap[result[0]] || result[0];
+        var classToAdd = lanMap[result[0].toLowerCase()] || result[0];
+        code.removeClass(result[0]);
         code.addClass(classToAdd);
         hljs.highlightBlock(code[0]);
       } else {
@@ -133,7 +139,7 @@ layout: default
   });
   function generateCatalog(selector) {
       var P = $('div.post-container'),a,n,t,l,i,c;
-      a = P.find('h1');
+      a = P.find('h1, h2, h3, h4, h5, h6');
       a.each(function () {
           n = $(this).prop('tagName').toLowerCase();
           i = "#"+$(this).prop('id');

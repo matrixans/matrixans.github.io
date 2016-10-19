@@ -22,9 +22,8 @@ anchorjs: true                          # if you want to customize anchor. check
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-  syntax_highlighter: rouge
-  # syntax_highlighter_opts:
-  #   default_lang: "ruby"
+  syntax_highlighter: highlight
+
 
 # Disqus settings
 #disqus-username: 
