@@ -1,10 +1,15 @@
 ---
-layout: page
+layout: common-page
 title: "About"
 description: ""
-header-img: ""
 ---
 
+<!-- Language Selector -->
+<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> 中文 </option>
+    <option value="1"> English </option>
+    <option value="2"> 日本語　</option>
+</select>
 
 <!-- Chinese Version -->
 <div class="zh">
@@ -15,6 +20,38 @@ header-img: ""
 
 </div>
 
+<!-- English Version -->
+<div class="en">
+    <blockquote>
+        block quote
+    </blockquote>
+
+    <p>
+        English version is (never) coming soon
+    </p>
+
+    <p style="text-align:right;">
+    -- Mensu
+    </p>
+
+</div>
+
+<!-- Japanese Version -->
+<div class="jp">
+    <blockquote>
+        なに書けばいいかなって迷ったり
+    </blockquote>
+
+    <p>
+        お楽しみに
+    </p>
+
+
+    <p style="text-align:right;">
+    -- メンス
+    </p>
+
+</div>
 
 <style>
 .ds-share,
@@ -84,4 +121,27 @@ header-img: ""
 </script>
 <!-- disqus 公共JS代码 end -->
 {% endif %}
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    var $jp = document.querySelector(".jp");
+    function onLanChange(index){
+        if (index == 0){
+            $zh.style.display = "block";
+            $en.style.display = "none";
+            $jp.style.display = "none";
+        } else if (index == 1){
+            $en.style.display = "block";
+            $zh.style.display = "none";
+            $jp.style.display = "none";
+        } else if (index == 2) {
+            $jp.style.display = "block";
+            $en.style.display = "none";
+            $zh.style.display = "none";
+        }
+    }
+    onLanChange(0);
+</script>
 

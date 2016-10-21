@@ -1,4 +1,5 @@
 @import "variables.less";
+@import "mixins.less";
 
 .catalog-container {
   padding-top: 60px;
@@ -24,11 +25,16 @@
     top: 60px;
   }
 
-  .catalog-toggle::before {
-    content: "−";
-    position: relative;
-    margin-right: 5px;
-    bottom: 1px;
+  .catalog-toggle {
+    &::before {
+      content: "−";
+      position: relative;
+      margin-right: 5px;
+      bottom: 1px;
+    }
+    &:hover {
+      color: @brand-primary;
+    }
   }
 
   .catalog-body {

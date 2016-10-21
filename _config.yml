@@ -1,29 +1,23 @@
 # Site settings
 title: Answer
-SEOTitle: possible answers for assignments on Matrix
+SEOTitle: Answers for Matrix
 email: yxshw55@qq.com
-description: answer
+description: "answer"
 keyword: ""
 url: "https://matrixans.github.io"              # your host, for absolute URL
 baseurl: ""                            # for example, '/blog' if your blog hosted on 'host/blog'
 manager: Mensu
 
-
 # Build settings
 gems: [jekyll-paginate]
 paginate: 4
-exclude: ["less","package.json","README.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 # Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
   syntax_highlighter: highlight
-
 
 # Disqus settings
 #disqus-username: 
@@ -40,6 +34,9 @@ ba_track_id:
 ga_track_id:          # Format: UA-xxxxxx-xx
 ga_domain: 
 
+anchorjs: true                          # if you want to customize anchor. check out line:? of `post.html`
+sidenav: true
+
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: ""
@@ -55,18 +52,4 @@ friends: [
         title: "Mensu",
         href: "https://mensu.github.io"
     }
-    
-    # ,{
-    #     title: "Foo",
-    #     href: "#"
-    # },{
-    #     title: "Bar",
-    #     href: "#"
-    # },{
-    #     title: "Example Friends",
-    #     href: "#"
-    # },{
-    #     title: "It helps SEO",
-    #     href: "#"
-    # }
 ]
